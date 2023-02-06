@@ -26,9 +26,9 @@ public class DbfToSqlConverter {
         try {
             conn.setAutoCommit(false);
 
-            StringBuffer sb = new StringBuffer();
+            StringBuilder sb = new StringBuilder();
             sb.append("INSERT INTO ");
-            sb.append(tableName+" (");
+            sb.append(tableName).append(" (");
             for (int i = 0; i < config.split(",").length - 1; i++) {
                 sb.append(config.split(",")[i]).append(",");
             }
