@@ -22,6 +22,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException, SQLException {
-        converter.convert("C:\\Users\\Lance\\Desktop\\kladr\\SOCRBASE.dbf", "socrbase");
+        converter.convert("C:\\Users\\Lance\\Desktop\\kladr\\SOCRBASE.dbf", "socrbase", "LEVEL, SCNAME, SOCRNAME, KOD_T_ST");
     }
 }
